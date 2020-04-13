@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="bottom"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/action1"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/mn_dialog_btn_select"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mTxtAction1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#29292D"
+                android:textSize="15dp"
+                tools:text="识别照片" />
+
+            <TextView
+                android:id="@+id/mTxtActionDesc1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mn_dialog_btn_select"
+                android:gravity="center"
+                android:textColor="#999999"
+                android:textSize="12dp"
+                tools:text="选择照片，系统自动识别身份证信息，无需手动填写" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#DEDEDE" />
+
+        <LinearLayout
+            android:id="@+id/action2"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@drawable/mn_dialog_btn_select"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mTxtAction2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="#29292D"
+                android:textSize="15dp"
+                tools:text="上传照片(免识别)" />
+
+            <TextView
+                android:id="@+id/mTxtActionDesc2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mn_dialog_btn_select"
+                android:gravity="center"
+                android:textColor="#999999"
+                android:textSize="12dp"
+                tools:text="仅上传照片，不会自动识别，需手动填写身份证信息" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:background="@color/gray_bg" />
+
+        <TextView
+            android:id="@+id/btn_dialog_cancle"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/mn_dialog_btn_select"
+            android:gravity="center"
+            android:text="取消"
+            android:textColor="#29292D"
+            android:textSize="18dp" />
+
+    </LinearLayout>
+</LinearLayout>

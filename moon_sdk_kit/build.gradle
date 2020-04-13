@@ -1,0 +1,40 @@
+apply plugin: 'moon-tools'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    api "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version"
+    api "org.jetbrains.kotlin:kotlin-reflect:$kotlin_version"
+    api 'com.alibaba:fastjson:1.1.71.android'
+
+    implementation "com.android.support:support-v4:$sdk_version"
+    implementation "com.android.support:appcompat-v7:$sdk_version"
+
+    demo 'com.orhanobut:logger:2.1.1'
+}
+
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        minSdkVersion 14
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        consumerProguardFiles 'proguard-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+moonTools {
+    useDemo false
+}
+
+apply from: './maven.gradle'

@@ -1,0 +1,44 @@
+apply plugin: 'moon-tools'
+apply plugin: 'moon-kit'
+
+android {
+    compileSdkVersion 27
+
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        consumerProguardFiles 'proguard-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    //    api project(":moon_sdk_kit")
+
+    projectMaven("moon_sdk_kit|com.meili.moon.sdk:kit:1.6.1") {
+        exclude group: 'com.meili.moon.sdk', module: 'kit'
+    }
+}
+
+moonTools {
+    useDemo false
+    allMaven 0
+}
+
+apply from: './maven.gradle'

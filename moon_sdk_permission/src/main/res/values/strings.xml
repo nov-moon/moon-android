@@ -1,0 +1,93 @@
+<resources>
+    <!--    权限组的StringArray定义方式为：-->
+    <!--    index = 0 : 当前权限组名称-->
+    <!--    index = 1 : 当前权限组对应的功能名称-->
+    <!--        .     : 当前权限组中的权限-->
+    <!--        .     : 当前权限组中的权限-->
+    <!--        .     : 当前权限组中的权限-->
+    <!--        .     : 当前权限组中的权限-->
+    <!--    其中，权限组功能名称可能为无，当为无时，使用短中划线 '-' 进行标记-->
+    <string-array name="moon_permission_call">
+        <item>电话</item><!-- 被拒绝权限名称 -->
+        <item>通话</item><!-- 影响的功能名称 -->
+        <item>android.permission.ACCEPT_HANDOVER</item>
+        <item>android.permission.ANSWER_PHONE_CALLS</item>
+        <item>android.permission.CALL_PHONE</item>
+        <item>android.permission.PROCESS_OUTGOING_CALLS</item>
+        <item>android.permission.READ_CALL_LOG</item>
+        <item>android.permission.WRITE_CALL_LOG</item>
+        <item>android.permission.READ_PHONE_STATE</item>
+        <item>android.permission.READ_PHONE_NUMBERS</item>
+        <item>android.permission.USE_SIP</item>
+    </string-array>
+    <string-array name="moon_permission_sms">
+        <item>短信</item><!-- 被拒绝权限名称 -->
+        <item>通讯</item><!-- 影响的功能名称 -->
+        <item>android.permission.READ_SMS</item>
+        <item>android.permission.SEND_SMS</item>
+        <item>android.permission.RECEIVE_SMS</item>
+        <item>android.permission.RECEIVE_MMS</item>
+        <item>android.permission.RECEIVE_WAP_PUSH</item>
+    </string-array>
+    <string-array name="moon_permission_accounts">
+        <item>通讯录</item><!-- 被拒绝权限名称 -->
+        <item>-</item><!-- 影响的功能名称 -->
+        <item>android.permission.GET_ACCOUNTS</item>
+        <item>android.permission.READ_CONTACTS</item>
+        <item>android.permission.WRITE_CONTACTS</item>
+    </string-array>
+    <string-array name="moon_permission_email">
+        <item>邮件</item><!-- 被拒绝权限名称 -->
+        <item>邮件</item><!-- 影响的功能名称 -->
+        <item>android.permission.ADD_VOICEMAIL</item>
+    </string-array>
+    <string-array name="moon_permission_location">
+        <item>位置信息</item><!-- 被拒绝权限名称 -->
+        <item>定位</item><!-- 影响的功能名称 -->
+        <item>android.permission.ACCESS_BACKGROUND_LOCATION</item>
+        <item>android.permission.ACCESS_COARSE_LOCATION</item>
+        <item>android.permission.ACCESS_FINE_LOCATION</item>
+        <item>android.permission.ACCESS_LOCATION_EXTRA_COMMANDS</item>
+        <item>android.permission.ACCESS_MEDIA_LOCATION</item>
+    </string-array>
+    <string-array name="moon_permission_calendar">
+        <item>日历</item><!-- 被拒绝权限名称 -->
+        <item>日程</item><!-- 影响的功能名称 -->
+        <item>android.permission.READ_CALENDAR</item>
+        <item>android.permission.WRITE_CALENDAR</item>
+    </string-array>
+
+    <string-array name="moon_permission_sensor">
+        <item>身体传感器</item><!-- 被拒绝权限名称 -->
+        <item>-</item><!-- 影响的功能名称 -->
+        <item>android.permission.ACTIVITY_RECOGNITION</item>
+        <item>android.permission.BODY_SENSORS</item>
+    </string-array>
+    <string-array name="moon_permission_phone">
+        <item>设备信息</item><!-- 被拒绝权限名称 -->
+        <item>-</item><!-- 影响的功能名称 -->
+        <item>android.permission.BATTERY_STATS</item>
+    </string-array>
+    <string-array name="moon_permission_camera">
+        <item>相机</item><!-- 被拒绝权限名称 -->
+        <item>拍照、视频</item><!-- 影响的功能名称 -->
+        <item>android.permission.CAMERA</item>
+    </string-array>
+
+    <string-array name="moon_permission_camera2">
+        <item>相机2</item><!-- 被拒绝权限名称 -->
+        <item>拍照2、视频2</item><!-- 影响的功能名称 -->
+        <item>android.permission.CAMERA</item>
+    </string-array>
+    <string-array name="moon_permission_audio">
+        <item>麦克风</item><!-- 被拒绝权限名称 -->
+        <item>-</item><!-- 影响的功能名称 -->
+        <item>android.permission.RECORD_AUDIO</item>
+    </string-array>
+    <string-array name="moon_permission_storage">
+        <item>存储</item><!-- 被拒绝权限名称 -->
+        <item>-</item><!-- 影响的功能名称 -->
+        <item>android.permission.READ_EXTERNAL_STORAGE</item>
+        <item>android.permission.WRITE_EXTERNAL_STORAGE</item>
+    </string-array>
+</resources>

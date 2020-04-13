@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/mBtnRequest1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开设置页" />
+
+    <Button
+        android:id="@+id/mBtnRequest2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="手动请求权限" />
+
+    <Button
+        android:id="@+id/mBtnRequestMust"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试注解：must" />
+
+    <Button
+        android:id="@+id/mBtnRequestShould"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试注解：should" />
+
+    <Button
+        android:id="@+id/mBtnRequestMustDenied"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试注解：must + denied" />
+
+    <Button
+        android:id="@+id/mBtnRequestShouldDenied"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试注解：must + should + denied" />
+
+    <Button
+        android:id="@+id/mBtnRequestMustDenied3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试注解：must + denied + 三参" />
+
+    <Button
+        android:id="@+id/mBtnRequestMustDenied2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试注解：must + denied + 二参" />
+
+    <Button
+        android:id="@+id/mBtnRequestMustDenied4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试注解：must + denied + 本参" />
+
+</LinearLayout>

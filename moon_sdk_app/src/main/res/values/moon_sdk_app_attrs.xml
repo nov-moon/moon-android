@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--TitleBar的样式-->
+    <attr name="moonTitleBarView" format="reference"/>
+    <!--是否支持沉浸式通知栏-->
+    <attr name="isSupportTranslucentStatusBarStyle" format="boolean"/>
+    <attr name="dataPickerBackgroundColor" format="color"/>
+
+    <declare-styleable name="MoonTitleBarView">
+        <attr name="titleBarBackground" format="color|reference"/>
+        <attr name="titleBarPaddingTop" format="dimension"/>
+        <attr name="titleBarHomeBg" format="reference"/>
+        <attr name="titleBarHomeMinWidth" format="dimension"/>
+        <attr name="titleBarHomeSrc" format="reference"/>
+        <attr name="titleBarHomeTxtColor" format="reference"/>
+        <attr name="titleBarHomeTxtSize" format="dimension"/>
+        <attr name="titleBarTitleColor" format="color"/>
+        <attr name="titleBarTitleSize" format="dimension"/>
+        <attr name="titleBarSubTitleColor" format="color"/>
+        <attr name="titleBarSubTitleSize" format="dimension"/>
+        <attr name="titleBarMenuTextColor" format="color"/>
+        <attr name="titleBarNoNetworkLayoutRes" format="reference"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="MNItemView">
+        <attr name="itemIcon" format="reference|integer"/>
+        <attr name="itemArrow" format="reference|integer"/>
+
+        <attr name="itemTxt" format="string"/>
+        <attr name="itemTxtColor" format="color"/>
+        <attr name="itemTxtSize" format="dimension"/>
+
+        <attr name="itemDescribeTxt" format="string"/>
+        <attr name="itemDescribeTxtColor" format="color"/>
+        <attr name="itemDescribeTxtSize" format="dimension"/>
+
+
+    </declare-styleable>
+
+
+    <declare-styleable name="MNImageView">
+        <attr name="imageIcon" format="reference|integer"/>
+
+        <attr name="imageText" format="string"/>
+        <attr name="imageTextColor" format="color"/>
+        <attr name="imageTextSize" format="dimension"/>
+
+
+    </declare-styleable>
+
+
+</resources>

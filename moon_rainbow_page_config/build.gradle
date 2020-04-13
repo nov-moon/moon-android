@@ -1,0 +1,17 @@
+apply plugin: 'java-library'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //AutoService会自动在META-INF文件夹下生成Processor配置信息文件
+    compile 'com.google.auto.service:auto-service:1.0-rc2'
+    //javaPoet是square推出的开源java代码生成框架，提供Java Api生成.java源文件
+    compile 'com.squareup:javapoet:1.8.0'
+    compile 'com.meili.moon.sdk:page-router-annotations:1.2.2'
+
+    annotationProcessor 'com.google.auto.service:auto-service:1.0-rc2'
+}
+
+sourceCompatibility = "7"
+targetCompatibility = "7"
+
+apply from: './maven.gradle'

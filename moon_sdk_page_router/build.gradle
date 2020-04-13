@@ -1,0 +1,41 @@
+apply plugin: 'moon-tools'
+
+android {
+    compileSdkVersion 27
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.0"
+        consumerProguardFiles 'proguard-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+
+    api "com.meili.moon.ui:dialog:1.4.0"
+
+    projectMaven "moon_sdk_kit|com.meili.moon.sdk:kit:1.5.2"
+    projectMaven "moon_rainbow_page_annotations|com.meili.moon.sdk:page-router-annotations:1.2.2"
+}
+
+androidExtensions {
+    experimental = true
+}
+
+moonTools {
+    useDemo true
+    allMaven 1
+}
+
+apply from: './maven.gradle'

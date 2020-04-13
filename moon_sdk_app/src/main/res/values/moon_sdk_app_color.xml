@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="moon_sdk_app_title_bar_menu_text_normal">#2A2A2F</color>
+    <color name="moon_sdk_app_title_bar_menu_text_dark">#666666</color>
+    <color name="moon_sdk_app_divider">#eaeaea</color>
+    <!--statusBar的默认背景颜色-->
+    <color name="moon_sdk_app_status_bar_def_color">#33000000</color>
+
+    <color name="moon_sdk_app_swipe_refresh_colors_01">#ffcf6f63</color>
+    <color name="moon_sdk_app_swipe_refresh_colors_02">#ffd88c82</color>
+    <color name="moon_sdk_app_swipe_refresh_colors_03">#ffe2a9a1</color>
+    <color name="moon_sdk_app_swipe_refresh_colors_04">#ffecc5c0</color>
+
+    <!--通用的fragment背景颜色-->
+    <color name="page_background">#F4F4F4</color>
+    <!--通用的title区文字颜色-->
+    <color name="normal_title">#36363D</color>
+    <!--通用的内容区文字颜色-->
+    <color name="normal_content">#666666</color>
+    <!--通用的app主题色-->
+    <color name="theme_color">#385590</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <!--分界线题色-->
+    <color name="boundary">#DEDEDE</color>
+     <!--身份证文字题色-->
+    <color name="idcardtext">#6E6E6E</color>
+    <color name="idedittext">#29292D</color>
+    <!--提交按钮颜色-->
+    <color name="btn_commit">#0036A7</color>
+    <color name="theme_press_color">#3564d0</color>
+    <color name="theme_unable_color">#969eb2</color>
+    <color name="theme_yellow_color">#ffb000</color>
+    <color name="dialog_bg_color">#8f000000</color>
+
+
+
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="moon_sdk_base_span_link">#4777e6</color>
+    <color name="moon_sdk_base_span_press">#D7D7D5</color>
+    <color name="moon_sdk_base_span_builder_def_label">#eaeaea</color>
+</resources>

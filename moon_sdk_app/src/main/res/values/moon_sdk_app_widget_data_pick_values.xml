@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NumberPicker">
+        <attr name="textColorUnSelect" format="color"/>
+        <attr name="textColor" format="color"/>
+        <attr name="textSize" format="float|dimension"/>
+        <attr name="textSizeUnSelect" format="float|dimension"/>
+        <attr name="startNumber" format="integer"/>
+        <attr name="endNumber" format="integer"/>
+        <attr name="currentNumber" format="integer"/>
+        <attr name="verticalSpacing" format="dimension"/>
+        <attr name="flagText" format="string|reference"/>
+        <attr name="flagTextSize" format="dimension"/>
+        <attr name="flagTextColor" format="color"/>
+        <attr name="backgroundColor" format="color"/>
+        <attr name="rowNumber" format="integer"/>
+    </declare-styleable>
+
+    <string-array name="moon_sdk_app_widget_data_picker_month_name">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <!--<string-array name="common_data_picker_month_name">-->
+        <!--<item>Jan</item>-->
+        <!--<item>Feb</item>-->
+        <!--<item>Mar</item>-->
+        <!--<item>Apr</item>-->
+        <!--<item>May</item>-->
+        <!--<item>Jun</item>-->
+        <!--<item>Jul</item>-->
+        <!--<item>Aug</item>-->
+        <!--<item>Sep</item>-->
+        <!--<item>Oct</item>-->
+        <!--<item>Nov</item>-->
+        <!--<item>Dec</item>-->
+    <!--</string-array>-->
+</resources>

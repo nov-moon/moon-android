@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/yl_layout_img_txt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/mImgPageStateError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:visibility="gone"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:id="@+id/mTxtPageStateError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="#333"
+        android:textSize="20dp"/>
+
+    <TextView
+        android:id="@+id/mTxtPageStateErrorReload"
+        android:layout_width="167dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rainbow_page_state_button"
+        android:gravity="center"
+        android:text="重新加载"
+        android:textColor="#666666"
+        android:textSize="16dp"/>
+</LinearLayout>
+

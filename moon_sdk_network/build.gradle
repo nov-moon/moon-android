@@ -1,0 +1,32 @@
+apply plugin: 'moon-tools'
+
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 1, 'seconds'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    projectMaven "moon_sdk_kit|com.meili.moon.sdk:kit:1.3.4"
+
+    implementation 'com.squareup.okhttp3:okhttp:3.14.1'
+}
+
+android {
+    compileSdkVersion 26
+
+    defaultConfig {
+        minSdkVersion 15
+        consumerProguardFiles 'proguard-rules.pro'
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+apply from: './maven.gradle'

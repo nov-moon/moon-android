@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ContainerTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/rainbowActivityAnimation</item>
+        <item name="dataPickerBackgroundColor">#ff0000</item>
+    </style>
+
+    <style name="defNumberPickerStyle">
+        <item name="backgroundColor">#FFFFFF</item>
+        <item name="currentNumber">1990</item>
+        <item name="endNumber">2100</item>
+        <item name="flagText">""</item>
+        <item name="flagTextSize">12dp</item>
+        <item name="flagTextColor">#686868</item>
+        <item name="rowNumber">5</item>
+        <item name="startNumber">1990</item>
+        <item name="textColor">#FFB400</item>
+        <item name="textSize">16dp</item>
+        <item name="textColorUnSelect">#B3B3B3</item>
+        <item name="textSizeUnSelect">14dp</item>
+        <item name="verticalSpacing">26dp</item>
+    </style>
+
+    <style name="titleTransparentTheme">
+        <item name="titleBarHomeSrc">@drawable/title_bar_home_back_tran</item>
+        <item name="titleBarTitleColor">@color/white</item>
+        <item name="titleBarTitleSize">20dp</item>
+        <item name="titleBarMenuTextColor">@color/white</item>
+        <item name="titleBarBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="MNProgressDialog" parent="@style/MNDialogStyle">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:background">#00000000</item>
+        <item name="android:backgroundDimEnabled">false</item>
+    </style>
+
+    <style name="MNActionSheetAnimation">
+        <item name="android:windowEnterAnimation">@anim/actionsheet_in_anim</item>
+        <item name="android:windowExitAnimation">@null</item>
+    </style>
+</resources>

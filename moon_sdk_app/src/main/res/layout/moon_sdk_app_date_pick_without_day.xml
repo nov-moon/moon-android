@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/mLayoutDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#dedede" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:background="#faf9f9">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="58dp"
+                android:layout_marginRight="58dp"
+                android:gravity="center"
+                android:text="请选择时间"
+                android:textColor="#6e6e6e"
+                android:textSize="15dp" />
+
+            <TextView
+                android:id="@+id/mBtnDatePickerPerform"
+                android:layout_width="58dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:gravity="center"
+                android:text="确认"
+                android:textColor="@color/theme_color"
+                android:textSize="16dp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:background="#dedede" />
+
+        <com.meili.moon.sdk.app.widget.datepickerwithoutday.DatePickerWithoutDay
+            android:id="@+id/mDatePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

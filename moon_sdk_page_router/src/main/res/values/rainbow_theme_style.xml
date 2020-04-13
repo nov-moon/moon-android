@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="RainbowAppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <item name="android:windowNoTitle">true</item>
+        <!--        <item name="android:windowBackground">@android:color/transparent</item>-->
+        <item name="android:windowIsTranslucent">true</item>
+        <!--        <item name="android:windowAnimationStyle">@style/rainbowActivityAnimation</item>-->
+        <item name="moonRainbowNotificationNormal">@style/rainbowNotificationNormal</item>
+    </style>
+
+    <!--rainbow默认的activity转场动画，设置到主题的：android:windowAnimationStyle 属性中-->
+    <style name="rainbowActivityAnimation" parent="@android:style/Animation.Translucent">
+        <!--<style name="rainbowActivityAnimation" parent="@android:style/Animation.Translucent">-->
+        <!--<item name="android:activityOpenEnterAnimation">@anim/rainbow_open_in</item>-->
+        <!--<item name="android:activityOpenExitAnimation">@anim/rainbow_open_out</item>-->
+        <!--<item name="android:activityCloseEnterAnimation">@anim/rainbow_close_in</item>-->
+        <!--<item name="android:activityCloseExitAnimation">@anim/rainbow_close_out</item>-->
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@null</item>
+
+    </style>
+
+    <style name="defRainbowTheme">
+        <item name="rainbowPageBackgroundColor">@color/defRainbowPageBackground</item>
+    </style>
+
+    <style name="rainbowTitlebarTransparentTheme">
+        <item name="rainbowTitleBarBackSrc">@drawable/rainbow_title_bar_home_back_tran</item>
+        <item name="rainbowTitleBarTitleColor">#ffffff</item>
+        <item name="rainbowTitleBarTitleSize">20dp</item>
+        <item name="rainbowTitleBarMenuTextColor">#ffffff</item>
+        <item name="rainbowTitleBarBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="rainbowNotificationNormal">
+        <item name="rainbowPageNotificationTextColor">#2B417D</item>
+        <item name="rainbowPageNotificationTextSize">14dp</item>
+        <item name="rainbowPageNotificationBackgroundColor">#8492B5</item>
+        <item name="rainbowPageNotificationArrow">@drawable/rainbow_page_notification_arrow</item>
+        <item name="rainbowPageNotificationIcon">@null</item>
+        <item name="rainbowPageNotificationHeight">45dp</item>
+    </style>
+
+    <style name="rainbowNotificationFailed" parent="rainbowNotificationNormal">
+        <item name="rainbowPageNotificationTextColor">#F4313A</item>
+        <item name="rainbowPageNotificationBackgroundColor">#F1BCBD</item>
+    </style>
+
+    <style name="rainbowNotificationSuccess" parent="rainbowNotificationNormal">
+        <item name="rainbowPageNotificationTextColor">#20CD50</item>
+        <item name="rainbowPageNotificationBackgroundColor">#B0E8C5</item>
+    </style>
+
+
+    <attr name="rainbowTheme" format="reference" />
+
+    <attr name="rainbowTitleBarView" format="reference" />
+
+    <!--    定义默认页面通知样式-->
+    <attr name="moonRainbowNotificationNormal" format="reference" />
+
+    <!--    定义失败页面通知样式-->
+    <attr name="moonRainbowNotificationFailed" format="reference" />
+
+    <!--    定义成功页面通知样式-->
+    <attr name="moonRainbowNotificationSuccess" format="reference" />
+
+    <color name="rainbow_status_bar_def_color">#33000000</color>
+
+    <color name="defRainbowPageBackground">#F4F4F4</color>
+    <color name="rainbow_title_bar_menu_text_normal">#2A2A2F</color>
+    <color name="rainbow_title_bar_menu_text_dark">#666666</color>
+
+    <color name="rainbow_title_bar_divider">#eaeaea</color>
+
+    <!--    Titlebar的样式-->
+    <declare-styleable name="RainbowTitleBarView">
+        <!--        设置titlebar背景颜色-->
+        <attr name="rainbowTitleBarBackground" format="color|reference" />
+        <!--        设置头部padding，这个padding会按照状态栏自动修正-->
+        <attr name="rainbowTitleBarPaddingTop" format="dimension" />
+        <!--        设置返回键的背景资源-->
+        <attr name="rainbowTitleBarBackBg" format="reference" />
+        <!--        设置返回键的最小触发宽度-->
+        <attr name="rainbowTitleBarBackMinWidth" format="dimension" />
+        <!--        设置返回键的样式资源-->
+        <attr name="rainbowTitleBarBackSrc" format="reference" />
+        <!--        设置返回键文字颜色，接收一个colorStateList，满足交互变色-->
+        <attr name="rainbowTitleBarBackTxtColor" format="reference" />
+        <!--        设置返回键文字大小-->
+        <attr name="rainbowTitleBarBackTxtSize" format="dimension" />
+        <!--        设置返回键默认文字，默认为空-->
+        <attr name="rainbowTitleBarBackTxt" format="reference|string" />
+        <!--        设置Title文字颜色-->
+        <attr name="rainbowTitleBarTitleColor" format="color" />
+        <!--        设置Title文字大小-->
+        <attr name="rainbowTitleBarTitleSize" format="dimension" />
+        <!--        设置二级Title文字颜色-->
+        <attr name="rainbowTitleBarSubTitleColor" format="color" />
+        <!--        设置二级Title文字大小-->
+        <attr name="rainbowTitleBarSubTitleSize" format="dimension" />
+        <!--        设置Menu文字颜色-->
+        <attr name="rainbowTitleBarMenuTextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="RainbowStyle">
+        <attr name="rainbowPageBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <!--PageNotification的样式-->
+    <declare-styleable name="RainbowPageNotification">
+        <!--设置页面通知的文字颜色-->
+        <attr name="rainbowPageNotificationTextColor" format="color|reference" />
+        <!--设置页面通知的文字大小-->
+        <attr name="rainbowPageNotificationTextSize" format="dimension" />
+        <!--设置页面通知的背景颜色-->
+        <attr name="rainbowPageNotificationBackgroundColor" format="color|reference" />
+        <!--设置页面通知的箭头资源-->
+        <attr name="rainbowPageNotificationArrow" format="reference" />
+        <!--设置页面通知的icon资源-->
+        <attr name="rainbowPageNotificationIcon" format="reference" />
+        <!--设置页面通知的高度-->
+        <attr name="rainbowPageNotificationHeight" format="dimension" />
+    </declare-styleable>
+
+    <item name="moonRainbowContentView" type="id" />
+
+</resources>

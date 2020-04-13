@@ -1,0 +1,16 @@
+<resources>
+
+    <!-- Application的主题 -->
+    <style name="AppTheme" parent="RainbowAppTheme">
+        <!--  在主题中设置Titlebar的自定义样式-->
+<!--        <item name="rainbowTitleBarView">@style/SelfRainbowTitleBarView</item>-->
+    </style>
+
+    <!-- 自定义Titlebar样式-->
+    <style name="SelfRainbowTitleBarView">
+        <item name="rainbowTitleBarBackground">#ff0000</item>
+        <item name="rainbowTitleBarPaddingTop">5dp</item>
+        <item name="rainbowTitleBarBackBg">@drawable/ic_launcher</item>
+    </style>
+
+</resources>

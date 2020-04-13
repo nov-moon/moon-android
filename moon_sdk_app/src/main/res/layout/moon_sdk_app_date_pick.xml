@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/mLayoutDialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.meili.moon.sdk.app.widget.datepicker.DatePicker
+            android:id="@+id/mDatePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/mDivider"
+            android:background="@color/white"/>
+
+        <View
+            android:id="@+id/mDivider"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@+id/mLayout"
+            android:background="#DEDEDE"/>
+
+        <LinearLayout
+            android:id="@+id/mLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/mBtnDatePickerCancel"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="取消"
+                android:textColor="#444"
+                android:textSize="16sp"/>
+
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="12dp"
+                android:background="#D0D0D0"/>
+
+            <Button
+                android:id="@+id/mBtnDatePickerPerform"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:text="确定"
+                android:textColor="#444"
+                android:textSize="16sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

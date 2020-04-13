@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/yl_layout_footer_loading"
+    android:layout_width="match_parent"
+    android:layout_height="65dp"
+    android:layout_centerInParent="true"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="8dp">
+
+    <com.meili.moon.sdk.app.widget.ProgressBarCircularIndicator
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:background="#a4a4a4" />
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:text="数据加载中..."
+        android:textColor="#666666"
+        android:textSize="14dp" />
+</LinearLayout>

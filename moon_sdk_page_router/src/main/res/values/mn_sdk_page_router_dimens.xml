@@ -1,0 +1,9 @@
+<resources>
+    <item name="mn_page_animation_duration" type="integer">400</item>
+    <dimen name="rainbow_title_bar_height">44dip</dimen>
+    <dimen name="rainbow_title_bar_button">35dip</dimen>
+    <dimen name="rainbow_title_bar_title_text">18dip</dimen>
+    <dimen name="moon_sdk_app_text">16dip</dimen>
+    <dimen name="rainbow_title_bar_translucent">0dp</dimen>
+    <dimen name="moon_sdk_app_divider_height">0.5dp</dimen>
+</resources>

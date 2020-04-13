@@ -1,0 +1,45 @@
+apply plugin: 'maven'
+
+def MAVEN_GROUP_ID = 'com.meili.moon.sdk'
+def MAVEN_ARTIFACT_ID = 'db'
+def MAVEN_VERSION = '1.2.1'
+//def MAVEN_VERSION = '0.1-SNAPSHOT'
+
+task androidJavadocs(type: Javadoc) {
+    source = android.sourceSets.main.java.srcDirs
+    classpath += project.files(android.getBootClasspath().join(File.pathSeparator))
+    failOnError = false
+}
+
+task androidJavadocsJar(type: Jar, dependsOn: androidJavadocs) {
+    classifier = 'javadoc'
+    from androidJavadocs.destinationDir
+}
+
+task androidSourcesJar(type: Jar) {
+    classifier = 'sources'
+    from android.sourceSets.main.java.srcDirs
+}
+
+artifacts {
+    archives androidSourcesJar
+    archives androidJavadocsJar
+}
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: MAVEN_URL) {
+                authentication(userName: MAVEN_USER_NAME, password: MAVEN_PASSWORD)
+            }
+
+            snapshotRepository(url: MAVEN_URL_SNAPSHOT) {
+                authentication(userName: MAVEN_USER_NAME, password: MAVEN_PASSWORD)
+            }
+
+            pom.groupId = MAVEN_GROUP_ID
+            pom.artifactId = MAVEN_ARTIFACT_ID
+            pom.version = MAVEN_VERSION
+        }
+    }
+}

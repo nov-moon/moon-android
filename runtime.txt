@@ -1,0 +1,38 @@
+### runtime project
+
+plugin
+sdk
+sdk_app
+appcompat_v7
+appcompat_v7_cardview
+appcompat_v7_recyclerview
+
+### runtime jar
+
+classes
+com.tonicartos
+com.android.support
+support-annotations
+android-support-v4
+android-support-v7-appcompat
+android-support-v7-cardview
+android-support-v7-recyclerview
+android-support-v7-palette
+
+support
+share_qq_mta-sdk
+umeng-analytics
+alipaySDK
+fastjson
+photo-view
+lz4
+
+com.umeng.message.lib_v2.5.0
+gaode_Location_V1.3.2
+share_sina_weibo_core_v3.0.1
+share_sina_weibosdk_3.0.1
+share_qq_open_sdk_r4889
+share_wx_150428
+
+### runtime assets
+fonts/HYQiH18030F45-4-7-1.ttf

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/mBtnInterceptorFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试fragment拦截" />
+
+    <Button
+        android:id="@+id/mBtnInterceptorActivity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试activity拦截" />
+
+    <Button
+        android:id="@+id/mBtnPageStates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="测试PageStatesView" />
+
+    <Button
+        android:id="@+id/mBtnHttp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开网页" />
+
+    <Button
+        android:id="@+id/mBtnAppUrl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="以url的方式打开页面" />
+
+    <Button
+        android:id="@+id/mBtnOpenBrowser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="浏览器的方式打开内部页面" />
+
+    <Button
+        android:id="@+id/mBtnOpenOtherGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开其他Group" />
+
+    <Button
+        android:id="@+id/mBtnOpenSamePage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开相同页面" />
+
+    <Button
+        android:id="@+id/mBtnOpenSamePageInSuccession"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="打开连续相同页面" />
+
+    <Button
+        android:id="@+id/mBtnShowNotification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="显示页面内通知" />
+
+</LinearLayout>

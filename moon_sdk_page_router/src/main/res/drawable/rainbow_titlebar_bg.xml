@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape>
+            <stroke
+                android:width="@dimen/moon_sdk_app_divider_height"
+                android:color="@color/rainbow_title_bar_divider" />
+        </shape>
+    </item>
+
+    <item android:bottom="@dimen/moon_sdk_app_divider_height">
+        <shape>
+            <solid android:color="#FFFFFF" />
+        </shape>
+    </item>
+</layer-list>

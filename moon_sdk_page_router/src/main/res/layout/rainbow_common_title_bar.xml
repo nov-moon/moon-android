@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.meili.moon.sdk.page.titlebar.RainbowTitleBarView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mRainbowTitleBar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/rainbow_title_bar_height"
+    android:layout_marginBottom="-4dp"
+    app:rainbowTitleBarBackground="@drawable/rainbow_title_bar_bg" />

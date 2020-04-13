@@ -1,0 +1,8 @@
+git@gitlab.mljr.com:moon-android/moon_sdk_app.git
+git@gitlab.mljr.com:moon-android/moon_sdk_base.git
+git@gitlab.mljr.com:moon-android/moon_sdk_cache.git
+git@gitlab.mljr.com:moon-android/moon_sdk_db.git
+git@gitlab.mljr.com:moon-android/moon_sdk_kit.git
+git@gitlab.mljr.com:moon-android/moon_sdk_network.git
+git@gitlab.mljr.com:moon-android/moon_sdk_page_router.git
+git@gitlab.mljr.com:moon-android/moon_sdk_web_bridge.git

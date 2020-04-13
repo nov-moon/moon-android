@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="mnNotificationStyle" format="reference"/>
+
+    <declare-styleable name="MNNotification">
+        <!--设置页面通知的icon-->
+        <attr name="mnNotificationIcon" format="reference"/>
+        <!--设置页面通知的最右边箭头-->
+        <attr name="mnNotificationArrow" format="reference"/>
+        <!--设置页面通知的信息-->
+        <attr name="mnNotificationMessage" format="string"/>
+        <!--设置页面通知的信息文字颜色-->
+        <attr name="mnNotificationMessageTextColor" format="color"/>
+        <!--设置页面通知的信息文字大小-->
+        <attr name="mnNotificationMessageTextSize" format="dimension"/>
+        <!--设置页面通知的背景颜色-->
+        <attr name="mnNotificationBackgroundColor" format="color"/>
+    </declare-styleable>
+
+    <style name="mnNotificationStyle">
+        <item name="mnNotificationIcon">@drawable/mn_dialog_notification_icon</item>
+        <item name="mnNotificationArrow">@drawable/mn_dialog_notification_arrow</item>
+        <item name="mnNotificationBackgroundColor">#FEECEC</item>
+        <item name="mnNotificationMessageTextColor">#FFFFFF</item>
+        <item name="mnNotificationMessageTextSize">14dp</item>
+    </style>
+
+</resources>

@@ -1,0 +1,24 @@
+apply plugin: 'maven'
+
+def MAVEN_GROUP_ID = 'com.meili.moon.sdk'
+def MAVEN_ARTIFACT_ID = 'page-router-processor'
+//def MAVEN_VERSION = '0.6-SNAPSHOT'
+def MAVEN_VERSION = '1.1.3'
+
+//gradle :moon_ui_dialog:uploadArchives  发布版本
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: MAVEN_URL) {
+                authentication(userName: MAVEN_USER_NAME, password: MAVEN_PASSWORD)
+            }
+            snapshotRepository(url: MAVEN_URL_SNAPSHOT) {
+                authentication(userName: MAVEN_USER_NAME, password: MAVEN_PASSWORD)
+            }
+            pom.groupId = MAVEN_GROUP_ID
+            pom.artifactId = MAVEN_ARTIFACT_ID
+            pom.version = MAVEN_VERSION
+        }
+    }
+}
